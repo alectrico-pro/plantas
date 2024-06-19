@@ -978,7 +978,9 @@
   [src]="imageUrl">
 </amp-img>
 
-              <div class="product-gallery">
+              <div class="product-gallery" 
+                hidden
+		 >
 
                 <ul 
                   [hidden]="product.selectedColor != 'yellow'">
@@ -1429,6 +1431,7 @@
 
 
                 <amp-carousel id="yellow-apple-carousel"
+	          hidden
                   width="1024"
                   height="682"
                   layout="responsive"
@@ -3439,7 +3442,9 @@
    </template>
 
     </section> <!-- loggeIn -->
-       <div class='stepper vertical'  >
+       <div class='stepper vertical'
+        hidden
+       >
 	<button [class]="currentStep > 0 ? 'step-title' : 'step-title step-active'" 
 	  class='step-title step-active' 
 	  on='tap:AMP.pushState({ currentStep: 0})'>
